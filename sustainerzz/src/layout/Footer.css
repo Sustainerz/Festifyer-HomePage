@@ -1,0 +1,20 @@
+ul{
+    background-color: rgba(209, 205, 205, 0.685);
+    margin-bottom: 0px;
+    margin-top: 100%;
+    list-style-type: none;
+    height: 80px;
+}
+li{
+    
+}
+.active{
+    color: grey;
+    margin-right: 30px;
+    font-size: 14px;
+    
+}
+.active:hover{
+    color: red;
+    float: right;
+}
