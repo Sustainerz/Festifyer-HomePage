@@ -2,7 +2,8 @@ import React from 'react'
 import './Footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube, faInstagram, faGoogle, faLinkedin} from '@fortawesome/free-brands-svg-icons';
-export default function Footer() {
+export default function Footer(props) {
+  const {DevName} = props;
   return (
     <div>
     <ul>
@@ -26,7 +27,7 @@ export default function Footer() {
       </div>
         <li><a className="active" href=""></a></li>
         <p className="copyright">
-        Copyright &copy; 2023 Designed by Sustainerzz.
+        Copyright &copy; 2023 Designed by {DevName}.
       </p>
       </ul>
 </div>
