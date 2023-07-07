@@ -24,6 +24,9 @@ li{
     align-items: center;
     margin-left: 700px; 
    }
+.copyright:hover{
+    color: red;
+}
    .social-icons {
     display: flex;
     align-items: center;
