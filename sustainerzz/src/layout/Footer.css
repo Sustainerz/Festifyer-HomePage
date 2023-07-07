@@ -20,5 +20,25 @@ li{
     float: right;
 }
 .copyright{
-    margin-left: 1100px; 
+    margin-top: 30px;
+    align-items: center;
+    margin-left: 700px; 
    }
+   .social-icons {
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+  }
+  
+  .social-icons a {
+    margin-right: 15px;
+  }
+  
+  .social-icons i {
+    font-size: 25px;
+    color: #555;
+  }
+  
+  .social-icons i:hover {
+    color: #000;
+  }
