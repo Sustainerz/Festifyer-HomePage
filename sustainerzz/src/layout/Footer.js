@@ -9,6 +9,9 @@ export default function Footer() {
         <li><a href=""></a></li>
         <li><a href=""></a></li>
         <li><a className="active" href=""></a></li>
+        <p className="copyright">
+        Copyright &copy; 2023 Designed by Sustainerzz.
+      </p>
       </ul>
 </div>
   )

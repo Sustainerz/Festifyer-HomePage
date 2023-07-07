@@ -4,6 +4,7 @@ ul{
     margin-top: 100%;
     list-style-type: none;
     height: 80px;
+    display: flex;
 }
 li{
     
@@ -18,3 +19,6 @@ li{
     color: red;
     float: right;
 }
+.copyright{
+    margin-left: 1100px; 
+   }
