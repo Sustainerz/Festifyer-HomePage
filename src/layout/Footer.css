@@ -22,7 +22,7 @@ ul{
     align-items: center;
     margin-right: 15px;
   }
-  .copyright > devname {
+  .copyright > devname{
     color: #555;
   }
   .copyright > devname:hover{
@@ -37,7 +37,7 @@ ul{
     color: #555;
   }
   
-  .social-icons i :hover{
+  .social-icons i:hover {
     color: #000;
   }
   
@@ -73,7 +73,7 @@ color: transparent;
 }
   
 .linkedin {
-  color:rgb(10, 102, 194);
+  color: rgb(5, 46, 158);
   font-size: 30px;
 }
 @media (max-width: 768px) {

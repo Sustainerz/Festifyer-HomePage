@@ -22,7 +22,7 @@ export default function Footer(props) {
         </a>
       </div>
         <p className="copyright">
-        Copyright &copy; 2023 Designed by <devname>{DevName}</devname>
+        <devname>Copyright &copy; 2023 Designed by</devname> <devname>{DevName}</devname>
       </p>
       </ul>
 </div>
