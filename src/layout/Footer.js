@@ -1,9 +1,9 @@
 import React from 'react'
 import './Footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faYoutube, faInstagram, faGoogle, faLinkedin} from '@fortawesome/free-brands-svg-icons';
+import { faYoutube, faInstagram, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 export default function Footer(props) {
-  const {devName}= props;
+  const {DevName} = props;
   return (
     <div>
     <ul>
@@ -12,7 +12,7 @@ export default function Footer(props) {
        <FontAwesomeIcon icon={faYoutube} className="youtube" />
         </a>
         <a href="https://www.gmail.com">
-        <FontAwesomeIcon icon={faGoogle} className="gmail" />
+        <i class="fab fa-google fa-3x"></i>
         </a>
         <a href="https://www.instagram.com">
         <FontAwesomeIcon icon={faInstagram} className="instagram" />
@@ -21,9 +21,8 @@ export default function Footer(props) {
         <FontAwesomeIcon icon={faLinkedin} className="linkedin" />
         </a>
       </div>
-        <li><a className="active" href=""></a></li>
         <p className="copyright">
-        Copyright &copy; 2023 Designed by {devName}
+        Copyright &copy; 2023 Designed by <devname>{DevName}</devname>
       </p>
       </ul>
 </div>
