@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../style/SignUp.css';
+import ReCAPTCHA from "react-google-recaptcha";
 
 export default function SignUp() {
+  const [verified,setVerified]=useState(false);
+
+  function onChange(value) {
+    console.log("Captcha value:", value);
+    setVerified(true);
+  }
   return (
     <>
       <header className='attached-header' style={{ font: '400 1rem/1.625rem "Open Sans", sans-serif' }}>
@@ -29,18 +36,10 @@ export default function SignUp() {
             <div className="mb-3 my-4">
               <input type="confirm-pass" className="form-control" id="exampleFormControlInput4" placeholder="Confirm Password" />
             </div>
-            <div className="form-check" style={{ display: 'flex', alignItems: 'center' }}>
-              <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-              <label className="form-check-label" htmlFor="flexCheckDefault" style={{ marginRight: 'auto',color:'#515867'}}>
-                Remember me
-              </label>
-              <span style={{ marginLeft: 'auto' }}>
-                <a className="forgot-pass" href="https://festifyer.com/password/reset">I forgot password</a>
-              </span>
-            </div>
+            <ReCAPTCHA sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" onChange={onChange}/>
           </div>
         </div>
-        <button className="form-control-submit-button mb-2" type="submit">Sign Up</button>
+        <button className="form-control-submit-button mb-2" type="submit" disabled={!verified}>Sign Up</button>
       </div>
     </>
   );
