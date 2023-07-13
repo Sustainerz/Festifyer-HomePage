@@ -13,7 +13,7 @@ export default function Login() {
           </div>
         </div>
       </header>
-      <div className='container col-xl-5 offset-xl-3.5' style={{ backgroundColor: '#f9f9f9', borderRadius: '10px', marginTop: '80px', marginBottom: '80px',height:'25vw'}}>
+      <div className='container col-xl-5 offset-xl-3.5' style={{ backgroundColor: '#f9f9f9', borderRadius: '10px', marginTop: '80px', marginBottom: '80px'}}>
         <div className='row' style={{ padding: '20px', marginBottom: '10px' }}>
           <div className="col my-4 text-left">
             <p style={{textAlign:'left',color:'#515867'}}> You don't have a password? Then please <a href="/" className='signup'>Sign Up </a></p>
