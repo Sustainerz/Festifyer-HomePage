@@ -4,7 +4,7 @@ import ImageSlider from './layout/ImageSlider.js';
 import Main from './layout/Main.js';
 import CardSec from './layout/CardSec.js';
 import CustomNavbar from './layout/Navbar.js';
-import Login from './layout/Login';
+import SignUp from './layout/SignUp';
 
 function App() {
   const images = [
@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="App">
     <CustomNavbar/>
-    <Login/>
+    <SignUp/>
         {/* <Main />
     <ImageSlider images={images} />
       <CardSec /> */}
