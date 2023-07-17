@@ -3,9 +3,15 @@ import React from 'react';
 import "../style/Navbar.css";
 import Tool from "./component";
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
+
+import {useNavigate } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css"
 
 const CustomNavbar = () => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate('/Login'); // Replace '/new-page' with the desired route path
+  };
   return (
     <Navbar expand="lg">
       <Container>
@@ -25,8 +31,8 @@ const CustomNavbar = () => {
             </Nav.Link>
           </Nav>
           <Nav>
-            <Button variant="primary" className = "ms-auto transparent-button">
-              <Tool login="Remal" />
+            <Button variant="primary" className = "ms-auto transparent-button" onClick={()=>{handleClick()}}>
+              <Tool login="Login" />
 
             </Button>
           </Nav>

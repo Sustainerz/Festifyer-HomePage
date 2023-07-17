@@ -1,15 +1,15 @@
-.signup{
+.login{
     height: 100vh;
 }
 
-.signup-container{
+.login-container{
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.signup-header{
+.login-header{
     height: 20%;
     width: 100%;
     display: flex;
@@ -20,8 +20,8 @@
 
 }
 
-.signup-body{
-    height: 80%;
+.login-body{
+    height: 70%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -30,29 +30,28 @@
 
 }
 
-.signup-form{
-    max-width: 60%;
-    min-width: 35%;
-    max-height: 95%;
+.login-form{
+    max-width: 80%;
+    min-width: 50%;
+    /* height: 80%; */
     padding: 2rem;
     display: flex;
     flex-direction: column;
     background-color: #F9F9F9;
     border-radius: 1rem;
-    margin-bottom: 0%;
+
 }
 
-.signup-form>p{
-    text-align: left;
-    margin-left:0.5rem;
+.login-form>p{
+    margin: 0 0 1rem;
 }
 
-.signup-form>p>a{
+.login-form>p>a{
     text-decoration: none;
 }
 
 .input-field{
-    height: 4.5rem;
+    height: 3.5rem;
     margin: 1rem 0;
     padding: 0 1rem;
     font-size: 1rem;
@@ -61,55 +60,53 @@
     color: #515867;
 }
 
-.signup-form>a{
+.login-form>a{
     margin: 1rem 0;
     text-decoration: none;
     color: inherit;
 }
 
-.signup-form>a:hover{
+.login-form>a:hover{
     color: #FF6C02;
     text-decoration: underline;
 }
 
-.signup-form>div{
+.login-form>div{
     display: flex;
     width: 100%;
-    justify-content: left;
-    text-align: left;
+    justify-content: space-between;
     margin: 1rem 0;
 
 }
 
-.signup-form>div>label{
+.login-form>div>label{
     display: flex;
     overflow: hidden;
-    
 }
 
-.signup-form>div>label>span{
+.login-form>div>label>span{
     margin-right: .4rem;
 
 }
 
-.signup-form>div>label>input{
+.login-form>div>label>input{
     position: relative;
     top: .1rem;
 }
 
-.signup-form>div>a{
+.login-form>div>a{
     text-decoration: none;
     color: inherit;
 }
 
-.sigup-form>div>a:hover{
+.login-form>div>a:hover{
     color: #FF6C02;
     text-decoration: underline;
 }
 
-.signup-form>button{
+.login-form>button{
     width: 100%;
-    height: 5rem;
+    height: 3.5rem;
     font-weight: bold;
     margin: 1rem 0;
     border-radius: .3rem;
@@ -121,7 +118,7 @@
     transition: background-color .2s;
 }
 
-.sigup-form>button:hover{
+.login-form>button:hover{
     color: #FF6C02;
     background-color: #F9F9F9;
     cursor: pointer;
